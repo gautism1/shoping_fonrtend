@@ -1,0 +1,22 @@
+li{
+    margin-right:5%;
+    display:inline;
+}
+ 
+ul{padding:0;
+}
+
+.header
+{
+    text-align:center;  
+}
+a{
+    text-decoration: none;
+    color:black;    
+}
+a:hover{
+    color:grey;
+}
+  span {
+    color:#d56a6a;
+}
