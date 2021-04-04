@@ -8,10 +8,10 @@ import { GlobalContext } from "../Global/GlobalState";
 function Nav()
 {
   const {productlist} =useContext(GlobalContext);
-            const [count,setCount]=useState(0);
-          
             
-console.log(count)
+          
+             
+console.log(productlist.length)
     return (
         <div>
         <div className="header">  
@@ -23,7 +23,7 @@ console.log(count)
             <Link to="/additem">Add Item</Link>
           </li>
           <li>
-            <Link to="/cart">Cart   {count!=0 && <span> ({count})</span>}</Link>
+            <Link to="/cart">Cart   {productlist && productlist.length>0  && <span> ({productlist.length})</span>}</Link>
           </li>
         </ul>
       <hr></hr>

@@ -2,10 +2,15 @@ export default (state,action)=> {
     switch(action.type)
     {
         case 'add_to_cart':
-           console.log(typeof state.data ,state.data)
-          return { ...state,
-            data:[].push(action.data)
+          let obj = state.data.find(product => product._id ==action.data._id);
+console.log(obj);
+if(!obj){
+           return { ...state,
+            data:[...state.data, action.data]
           }
+        }
+      
+      
         default:
             return state;
     }   

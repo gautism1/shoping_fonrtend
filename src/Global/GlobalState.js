@@ -14,6 +14,8 @@ export const GlobalProvider=  ({children})  =>
 
     async function addToCart(product_details)
     {  
+
+ 
 dispatch({
     type:"add_to_cart",
     data:product_details
@@ -24,7 +26,6 @@ return (
     <GlobalContext.Provider value={{
         productlist:state.data,
         addToCart
-     
     }}>
     {children}
     </GlobalContext.Provider>     

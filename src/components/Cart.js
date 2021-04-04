@@ -3,19 +3,14 @@ import '../style/home.css';
 import { GlobalContext } from "../Global/GlobalState";
  
 function Cart () {
-              const {initialstate} =useContext(GlobalContext);
-              const [products,setProducs]=useState([]);
+              const {productlist} =useContext(GlobalContext);
               
-              useEffect(() => {
-                 setProducs(initialstate);
-                 console.log(products)
-            },[]);
     return <div className="">
       <p>Items in your Cart</p>
       <div>
-          { products  && products.length && 
-            products.map((product,index)=>(
-          <div key={index}>{products.product_name}</div>
+          { productlist  && productlist.length && 
+            productlist.map((product,index)=>(
+          <div key={index}> Hello{product.product_name}</div>
          ))
         }
       </div>
