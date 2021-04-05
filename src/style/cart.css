@@ -15,7 +15,7 @@ flex-wrap: wrap;
  }
  .cart-button-pay
 {
-    background-color: rgb(216, 199, 214);
+    background-color: rgb(107, 235, 149);
     font-size:15px;
     padding:10px;
     font-weight: 500;
@@ -31,12 +31,12 @@ flex-wrap: wrap;
     font-size:15px;
     padding:10px;
     font-weight: 500;
-    margin-top:10px;
+     
     border:none;
     border-radius:5px;
     color:white;
     cursor:pointer;
-    margin-right:10px;
+    margin-left:20px;
     outline:none;
 }
  .img
@@ -56,7 +56,22 @@ flex-wrap: wrap;
 .checkout
 {
     padding:10px;
+    height:250px;
     margin-top: 3%;
     width: 267px;
     background: rgba(246, 246, 246, 0.924);
+}
+.checkout >p {
+    color:grey;
+}
+.checkout >p >span{
+    font-size:15px;
+    padding:10px;
+    font-weight: 500;
+    margin-top:10px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    outline:none;
+    background-color: rgb(216, 199, 214);
 }

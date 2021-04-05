@@ -13,7 +13,7 @@ function  Productdetails(props) {
     <div className="productdetails">       
           <div className="image-div">
                  <div className="image">
-                 <img src={props.product.image_url ? props.product.image_url : 'https://fakeimg.pl/200*200'} className="img" alt="Product-image" />
+                 <img src={props.product.image_url ? props.product.image_url : 'https://hotroast.net/imgp/pimgp/a/einstei1/p/image-not-found-shitpostfriday/0x0/https://img.whaleshares.io/wls-img/einstei1/d765e65f432e7e6f0d062616d19364ecdc5631da.png'} className="img" alt="Product-image" />
                  </div>
           </div>
           <div>

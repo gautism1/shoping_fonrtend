@@ -35,8 +35,9 @@ const [amount,setAmount] =useState(0);
         </div>}
               <div className="checkout">
            
-             <p>Total Amount to be paid</p>
-             <p>{amount}/-</p>
+             <p>Total Amount  :
+               <span> ₹ {amount} /- </span> </p>
+            
              <button className="cart-button-pay"onCl >      Pay Now    </button>
 
                </div>

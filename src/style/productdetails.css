@@ -19,7 +19,7 @@
 .product-price
 {
     background-color: rgb(243, 237, 243);
-    width:50px;
+    width:80px;
     padding:5px;
     border-radius: 5px;;
 }
@@ -37,6 +37,7 @@
     border-radius:5px;
     cursor:pointer;
     outline:none;
+    bottom:10px;    
 }
 .product-rating{
     font-size:10px;
