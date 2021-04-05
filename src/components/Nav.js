@@ -8,10 +8,6 @@ import { GlobalContext } from "../Global/GlobalState";
 function Nav()
 {
   const {productlist} =useContext(GlobalContext);
-            
-          
-             
-console.log(productlist.length)
     return (
         <div>
         <div className="header">  
@@ -25,9 +21,11 @@ console.log(productlist.length)
           <li>
             <Link to="/cart">Cart   {productlist && productlist.length>0  && <span> ({productlist.length})</span>}</Link>
           </li>
-        </ul>
-      <hr></hr>
-  </div>
+         
+        </ul><hr></hr>
+       
+  </div> 
+  
 </div>
     )
 }

@@ -15,3 +15,31 @@
     margin-right:3%;
     margin-bottom:3%;
 }
+.categories
+{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+p{
+    margin-top:10px;
+    margin-bottom:0px;
+}
+.select_category
+{
+    outline:none;
+    width:100px;
+    height:40px;
+    font-size:20px;
+    border-radius: 5px;
+    padding:5px;;
+}
+label{
+    margin-right:5px;
+}
+select >option:hover{
+    background:grey;
+}
+.abc {
+    display: flex;
+}

@@ -14,18 +14,23 @@ export const GlobalProvider=  ({children})  =>
 
     async function addToCart(product_details)
     {  
-
- 
 dispatch({
     type:"add_to_cart",
     data:product_details
 })
     }
-
+    async function remove(_id)
+    {   
+dispatch({
+    type:"remove_from_cart",
+    data:_id
+}) 
+    }
 return (   
     <GlobalContext.Provider value={{
         productlist:state.data,
-        addToCart
+        addToCart,
+        remove
     }}>
     {children}
     </GlobalContext.Provider>     

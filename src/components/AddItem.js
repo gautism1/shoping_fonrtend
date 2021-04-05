@@ -58,11 +58,22 @@ function AddItem()
                <input type="number" id="bought" name="total_bought" placeholder ="Enter Buys"  ></input>
                <br></br>
               
-               <input type="text" id="category" name="category" placeholder ="Enter Category" ></input>
-               <br></br>
-               <button type="submit" className="submit-form">Submit</button>
+               {/* <input type="text" id="category" name="category" placeholder ="Enter Category" ></input>
+               <br></br> */}
+               <p className="category">Category</p>
+               <div className="category">
+                    
+                  
+               <input type="radio" id="male" name="category" value="Charger"></input>
+               <label for="male">Charger</label><br></br>
+               <input type="radio" id="female" name="category" value="Mobile"></input>
+               <label for="female">Mobile</label><br></br>
+               <input type="radio" id="other" name="category" value="Watches"></input><br></br>
+               <label for="other">Watches </label> 
+               </div>
+             <button type="submit" className="submit-form">Submit</button>  
+
                </form>
-            
         </div>
         </>
     )

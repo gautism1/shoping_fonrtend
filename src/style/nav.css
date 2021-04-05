@@ -20,3 +20,16 @@ a:hover{
   span {
     color:#d56a6a;
 }
+.checkOut
+{
+    background-color: rgb(216, 199, 214);
+    font-size:15px;
+    padding:10px;
+    font-weight: 500;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    outline:none;
+    float:right;
+}
+ 
