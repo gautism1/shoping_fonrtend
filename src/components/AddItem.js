@@ -14,7 +14,7 @@ function AddItem()
         var item = elements.item(i);
         obj[item.name] = item.value;
     }   
-    
+    console.log(obj)
     axios.post("http://localhost:5000/shopList",obj).then((data)=>
         {
            alert("kudos !! Product details have been successfully uploaded ");
@@ -60,7 +60,7 @@ function AddItem()
               
                {/* <input type="text" id="category" name="category" placeholder ="Enter Category" ></input>
                <br></br> */}
-               <p className="category">Category</p>
+               <p   >Category</p>
                <div className="category">
                     
                   

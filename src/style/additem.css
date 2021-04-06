@@ -24,6 +24,12 @@ input[type=number] {
     -webkit-appearance: none;
     margin: 0;
   }
+  input[type=radio]
+  {
+      width:10%;
+      margin:0;
+      margin-top:5px;
+  }
 .submit-form
 {
     background-color: rgb(216, 199, 214);
