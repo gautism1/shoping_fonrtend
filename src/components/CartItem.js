@@ -9,22 +9,24 @@ function CartItem (props) {
             let updateprice=props.updateprice
 
         function removefromcart()
-        {let sum =0;
+        {       let sum =0;
+ 
                 remove(props.product._id);
                 for(let key in productlist)
                 {
                   if(productlist[key].price)
-                 sum=sum+productlist[key].price;
-               
+                     sum=sum+productlist[key].price;
+                
                 }
                 updateprice(sum);
+                
         }
     return (
     <div className="cart-div">
      
      <div className="cart-product">
       <div className="content">
-       <img src={props.product.image_url ? props.product.image_url : 'https://fakeimg.pl/200*200'} className="img" alt="Product-image" />
+       <img src={props.product.image_url} className="img" alt="Product-image" />
     <div className="product-detail">
        <div>  {props.product.product_name}  </div>
         <div className="product-price">    ₹ {props.product.price}    </div>    

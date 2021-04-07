@@ -23,9 +23,10 @@ function AddItem()
     {
         console.log(err,"error found");
         alert("Something went wrong");
+        document.getElementById("dataform").reset();
     }
     )
-       document.getElementById("dataform").reset();
+       
    }
     return (<>
        <p>Product Item data List</p>
@@ -49,7 +50,7 @@ function AddItem()
                <input type="text" id="sku" name="sku"  placeholder ="Enter SKU" required ></input>
                <br></br>
               
-               <input type="number" id="reviews" name="total_revieews"  placeholder ="Enter Review" required ></input>
+               <input type="number" id="reviews" name="total_reviews"  placeholder ="Enter Review" required ></input>
                <br></br>
              
                <input type="number" id="rating" name="rating" placeholder ="Enter Rating" required ></input>
@@ -57,9 +58,6 @@ function AddItem()
                 
                <input type="number" id="bought" name="total_bought" placeholder ="Enter Buys"  ></input>
                <br></br>
-              
-               {/* <input type="text" id="category" name="category" placeholder ="Enter Category" ></input>
-               <br></br> */}
                <p   >Category</p>
                <div className="category">
                     

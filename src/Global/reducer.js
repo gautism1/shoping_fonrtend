@@ -20,7 +20,7 @@ export default (state,action)=> {
             let index = state.data.map(function(item) {
                     return item._id
                 }).indexOf(action.data);
-               state.data.splice(index, 1); 
+               state.data.splice(index-1, 1); 
             
            return { ...state,
             data:[...state.data]

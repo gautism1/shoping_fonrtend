@@ -21,7 +21,7 @@ function  Productdetails(props) {
                    <div className="product-name">       {props.product.product_name}</div>    
                    <div className="product-price">    ₹ {props.product.price}</div>
                 <div className="product-rating">Rated :  {props.product.rating}.. Pieces-out  {props.product.total_bought}</div>
-                <p className="product-desc">   {props.product.desciption}</p>
+                <p className="product-desc">   {props.product.description}</p>
                 <div className="product-reviews"> Total-Reviews : {props.product.total_reviews}</div>
                  <div className="product-sku">  S.K.U  :    {props.product.sku}</div>
                  <div className="product-sku"> Category   {props.product.category}</div>

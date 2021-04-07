@@ -14,22 +14,20 @@ const [amount,setAmount] =useState(0);
               for(let key in productlist)
               {
                 if(productlist[key].price)
-               sum=sum+productlist[key].price;
+                   sum=sum+productlist[key].price;
                setAmount(sum)
               }
             },[]);
 
             let updateprice=  function(price)
-            {
-              console.log("update",price)
-              
+            { 
               setAmount( price);
             }
     return (<div className="cart-div">
         <p>Items in your Cart</p> 
      
       <div className="pay">
-         {  productlist && productlist.length>0   && <div>
+         {  productlist && productlist.length>=0   && <div>
           { 
             productlist.map((product,index)=>(
           <div > 
