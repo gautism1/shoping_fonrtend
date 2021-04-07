@@ -5,7 +5,7 @@ const CartItem = lazy(() => import("./CartItem"));
 
 function Cart () {
               const {productlist} =useContext(GlobalContext);
-              let sum=0;
+              var sum=0;
                           
 const [amount,setAmount] =useState(0);  
           
@@ -15,9 +15,16 @@ const [amount,setAmount] =useState(0);
               {
                 if(productlist[key].price)
                sum=sum+productlist[key].price;
+               setAmount(sum)
               }
-              setAmount(sum)
             },[]);
+
+            let updateprice=  function(price)
+            {
+              console.log("update",price)
+              
+              setAmount( price);
+            }
     return (<div className="cart-div">
         <p>Items in your Cart</p> 
      
@@ -27,7 +34,8 @@ const [amount,setAmount] =useState(0);
             productlist.map((product,index)=>(
           <div > 
           <CartItem 
-            product={product}    
+            product={product}  
+            updateprice={updateprice}
           />
           </div>
               ))

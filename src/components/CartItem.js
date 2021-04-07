@@ -4,11 +4,20 @@ import { GlobalContext } from "../Global/GlobalState";
  
 function CartItem (props) {
  
-        const {remove} =useContext(GlobalContext);
-            
+        const {remove,productlist} =useContext(GlobalContext);
+
+            let updateprice=props.updateprice
+
         function removefromcart()
-        {
+        {let sum =0;
                 remove(props.product._id);
+                for(let key in productlist)
+                {
+                  if(productlist[key].price)
+                 sum=sum+productlist[key].price;
+               
+                }
+                updateprice(sum);
         }
     return (
     <div className="cart-div">
