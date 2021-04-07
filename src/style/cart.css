@@ -49,10 +49,9 @@ flex-wrap: wrap;
      flex-wrap: wrap;
      margin-left:10px;
  }
- .product-details
- {
-     margin-left:20px;
- }
+  .product-detail{
+      margin:10px;
+  }
 .checkout
 {
     padding:10px;

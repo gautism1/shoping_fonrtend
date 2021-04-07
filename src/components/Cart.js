@@ -33,14 +33,14 @@ const [amount,setAmount] =useState(0);
               ))
         }
         </div>}
-         <div className="checkout">
+        { productlist.length>0 && <div className="checkout">
            
              <p>Total Amount  :
                <span> ₹ {amount} /- </span> </p>
             
              <button className="cart-button-pay"onCl >      Pay Now    </button>
 
-               </div>
+               </div>}
       </div>
         <div>
 
